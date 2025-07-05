@@ -5,3 +5,10 @@
   language: python
   stages: [pre-commit, pre-merge-commit, manual]
   pass_filenames: false
+- id: check
+  name: Check the project using `xmake check`
+  description: This hook checks the entire project, using the checkers from `xmake` specified as arguments.
+  entry: check
+  language: python
+  stages: [pre-commit, pre-merge-commit, manual]
+  pass_filenames: false
