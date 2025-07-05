@@ -1,0 +1,7 @@
+- id: format
+  name: Format project using `xmake format`
+  description: This hook formats the entire project, using the same formatter that `xmake` uses.
+  entry: format
+  language: python
+  stages: [pre-commit, pre-merge-commit, manual]
+  pass_filenames: false
