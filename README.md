@@ -11,7 +11,19 @@ Example:
 
 ```yml
 - repo: https://github.com/seffradev/xmake-pre-commit-hooks
-  rev: v1.0.0
+  rev: v1.1.0
   hooks:
   - id: format
+```
+
+### Linting your project
+
+Example:
+
+```yml
+- repo: https://github.com/seffradev/xmake-pre-commit-hooks
+  rev: v1.1.0
+  hooks:
+  - id: check
+    args: [ clang.tidy ]
 ```
